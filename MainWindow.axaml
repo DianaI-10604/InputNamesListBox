@@ -9,7 +9,7 @@
         Title="InputNames"
 		Background="Transparent">
 	<Border CornerRadius="10" Background="White">
-		<Grid ShowGridLines="False" RowDefinitions="*, 2.1*, *" ColumnDefinitions="*, *">
+		<Grid ShowGridLines="True" RowDefinitions="*, 2.1*, *" ColumnDefinitions="*, *">
 			<StackPanel Grid.Row="0" Grid.Column="0">
 				<TextBox Name="firstname" Margin="-50 30 0 0"
 						 Width="150"
@@ -49,6 +49,15 @@
 					 Grid.ColumnSpan="2"
 					 Margin="25">
 			</ListBox>
+
+			<StackPanel Grid.Row="2"
+						Grid.Column="0"
+						Grid.ColumnSpan="2">
+				<Button Margin="200 10 0 0"
+						Width="180"
+						Height="30"
+						Content="Показать в новом окне"/>
+			</StackPanel>
 		</Grid>
 	</Border>
 </Window>
